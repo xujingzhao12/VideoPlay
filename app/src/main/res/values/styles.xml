@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>            <!--该软件上面的导航栏-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>    <!--手机信号栏-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">本地视频播放器</string>
+    <string name="menu_item1">扫描</string>
+    <string name="menu_item2">视频统计信息</string>
+</resources>

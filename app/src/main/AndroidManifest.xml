@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.videoplayer"><!--应用程序的包名-->
+
+    <!--静态申请权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <!--指定android应用的图标,标签,主题等-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".VideoPlay"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            /><!--隐藏该ActionBar-->
+        <!--<activity android:name=".VideoPlayPage"
+            />-->
+        <!--android:configChanges="orientation"-->
+        <!--android:screenOrientation="landscape"  横屏播放-->
+        <!--android:screenOrientation="portrait" 竖屏播放-->
+        <activity android:name=".MainActivity"
+            android:label="视频列表">
+            <intent-filter>
+                <!--指定我程序的主入口-->
+                <action android:name="android.intent.action.MAIN" />
+                <!--指定加载该应用时运行该Activity-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
